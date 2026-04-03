@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_oil_prices
+    columns:
+      - name: date
+        data_tests:
+          - not_null
+          - unique
+      - name: brent_price
+        data_tests:
+          - not_null
+      - name: wti_price
+        data_tests:
+          - not_null
+      - name: vix
+        data_tests:
+          - not_null
+      - name: gpr_index
+        data_tests:
+          - not_null
+
+  - name: stg_geo_events
+    columns:
+      - name: date
+        data_tests:
+          - not_null
+          - unique
+      - name: event_type
+        data_tests:
+          - not_null
+      - name: event_severity
+        data_tests:
+          - not_null
+
+  - name: mart_oil_geopolitics
+    columns:
+      - name: date
+        data_tests:
+          - not_null
+          - unique
+      - name: brent_price
+        data_tests:
+          - not_null
+      - name: wti_price
+        data_tests:
+          - not_null

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: oil_pipeline_raw
+    project: module-2-project-490315
+    dataset: oil_pipeline_raw
+    tables:
+      - name: raw_oil_prices
+      - name: raw_geo_events
